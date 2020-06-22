@@ -1,0 +1,198 @@
+/* знімає всі відступи задані браузером */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: white;
+    font-family: "Nunito", sans-serif;
+    
+}
+/* для розмитого заднього фона */
+body::before {
+    content: "";
+    /* position: fixed; */
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background: url(images/restoran.jpg);
+    filter: blur(0px);
+}
+/* Менюшка */
+.top {
+    background-image: url(images/restoran.jpg);
+  
+    max-width: 100%;
+    height: 100vh;
+    /* 100vh = ширині екрану (1vh = ширина екрану / 100) */
+    padding-top: 20px;
+    
+}
+
+ul {
+    box-shadow: 3px 3px 10px #000000;
+    padding: 1px;
+    width: 1000px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.many {
+    /* margin-top:20px;  */
+
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+
+#a1 {
+    background-color: rgba(5, 5, 5, 0.7);
+    display: flex;
+    max-width: 100%;
+    justify-content: center;
+    list-style: none;
+}
+
+#a2 {
+    text-decoration: none;
+    color: white;
+    margin: 30px;
+    padding: 10px;
+    font-size: 24px;
+    transition: 1s;
+}
+
+#a2:hover {
+    border: 20px;
+    color: #f77041;
+    transform: scale(1s);
+    transition: 1s;
+}
+
+/* Про нас */
+#title {
+    color: black;
+    font-size: 40px;
+
+    margin-top: 50px;
+    text-align: left;
+    margin-left: 70px;
+}
+
+.pizza {
+    margin-top: 200px;
+    border: 2px solid black;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px black;
+    text-align: center;
+}
+
+.PP {
+    margin-bottom: 10px;
+    margin-top: 150px;
+    color: white;
+    font-size: 40px;
+    text-shadow: 5px 5px 5px black;
+    text-align: center;
+}
+
+.NP {
+    color: white;
+    font-size: 18px;
+    text-shadow: 5px 5px 5px black;
+    text-align: center;
+}
+
+.letsgo {
+    margin-top: 300px;
+    margin-bottom: 100px;
+    text-align: center;
+    height: 50px;
+    width: 100%;
+    align-self: top;
+}
+
+.letsgo a {
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    text-shadow: 7px 7px 5px black;
+    transition: 1s;
+    font-size: 25px;
+}
+
+a:hover {
+    color: #f77041;
+    cursor: pointer;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+.history img {
+    box-shadow: 10px 10px 7px black;
+    margin-right: 20px;
+    margin-top: 10px;
+    float: right;
+}
+
+.history_2 img {
+    box-shadow: 10px 10px 7px black;
+    margin-right: 40px;
+    margin-top: 90px;
+    margin-left: 20px;
+    float: right;
+}
+
+.text123 {
+    text-align: left;
+    text-decoration: none;
+    margin-left: 70px;
+    margin-top: 30px;
+    margin-bottom: 200px;
+
+    width: 50%;
+    color: black;
+}
+.text123 h2 {
+    text-align: left;
+}
+
+
+
+
+.up {
+    color: black;
+    background-color: #35363a;
+    height: 40px;
+    border-bottom: 1px solid black;
+    max-width: 100%;
+    margin-top: 30px;
+}
+
+.up img {
+    color: black;
+    width: 70px;
+    height: 30px;
+    background-color: white;
+    margin-left: 48%;
+}
+
+.fon{
+    min-height:calc(100vh + 50px);
+}
+
+
+
+
